@@ -8,7 +8,6 @@ const Hero = () => {
   const scrollToProjects = () => {
     document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
   };
-  const tex = useTexture(bg1);
 
   return (
     <section
@@ -22,7 +21,7 @@ const Hero = () => {
         <ambientLight intensity={0.5} />
         <directionalLight position={[0, 1, 0]} />
         <Sphere args={[1, 100, 200]} scale={1.5}>
-          <meshStandardMaterial tex color="#8f6ab3" wireframe />
+          <meshStandardMaterial color="#8f6ab3" wireframe />
         </Sphere>
       </Canvas>
       <motion.h1
